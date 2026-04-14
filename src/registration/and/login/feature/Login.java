@@ -12,11 +12,11 @@ import static registration.and.login.feature.Login.Registration_and_login_featur
 
 
 public class Login{
-    String Username;
-    String Password;
-    String CellphoneNumber;
-     String firstname;
-     String Lastname;
+    static String  Username;
+    static String Password;
+    static String CellphoneNumber;
+    static String firstname;
+    static String Lastname;
 //loop to check if characters are correct
       
 //     
@@ -38,7 +38,7 @@ public class Registration_and_login_feature {
            System.out.println("The Username must contain an Underscore and must be 5 characters long");
            return false;
         }
-      
+    }
         static  boolean checkPasswordComplexity() {
        if( Password.length() <8) {
            System.out.println("Password is too short");
